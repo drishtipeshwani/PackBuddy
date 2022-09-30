@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from "react";
-import { Input, IconButton, Checkbox, Text, Box, VStack, HStack, Heading, Icon, Center, useToast, NativeBaseProvider, ScrollView } from "native-base";
+import { Input, IconButton, Checkbox, Text, Box, VStack, HStack, Heading, Icon, Center, useToast, NativeBaseProvider, ScrollView,CheckIcon, Button, Badge } from "native-base";
 import { Feather, Entypo } from "@expo/vector-icons";
 import { DataStore } from '@aws-amplify/datastore';
 import { Place } from '../models';
@@ -58,7 +58,7 @@ const Todo = (props) => {
       return;
     }
 
-    setList([...list, { name: title, activity:"Makeup" }]);
+    setList([...list, { name: title, activity:'Custom'}]);
 
     // Adding the item to the database by deleting the previous place and creating a new place with the updated list
     const todelete = await DataStore.query(Place,place.id);
@@ -67,7 +67,7 @@ const Todo = (props) => {
       await DataStore.save(
         new Place({
           "name": place.name,
-          "Todos": [...list, { name: title, activity:"Makeup" }],
+          "Todos": [...list, { name: title, activity:'Custom'}],
           "activities":activities
         })
       );
@@ -105,25 +105,33 @@ const Todo = (props) => {
     
   }; 
 
-  return <Center w="100%" padding='2.5' backgroundColor={'#D2DAFF'}>
+
+  return <Center w="100%" padding='2.5'>
       <Box maxW="300" w="100%">
         <VStack space={4}>
+         <Heading>Your Custom Packing List</Heading>
           <HStack space={2}>
-            <Input flex={1} onChangeText={v => setInputValue(v)} value={inputValue} placeholder="Add Task" accessibilityLabel="Input" />
-            <IconButton borderRadius="sm" variant="solid" icon={<Icon as={Feather} name="plus" size="sm" color="warmGray.50" />} onPress={() => {
+            <Input flex={1} onChangeText={v => setInputValue(v)} value={inputValue} placeholder="Add Custom Item.." accessibilityLabel="Input" placeholderTextColor={'black'} borderColor='black'/>
+            <IconButton borderRadius="sm" variant="solid" icon={<Icon as={Feather} name="plus" size="sm" color="white" />} onPress={() => {
             addItem(inputValue);
             setInputValue("");
           }} accessibilityLabel="Add"/>
           </HStack>
           <VStack space={2}>
-              {list.map((item, itemI) => <HStack w="100%" justifyContent="space-between" alignItems="center" key={item.name + itemI.toString()}>
-                <Text>
+          {list.map((item, itemI) => 
+          <VStack space={2} key={itemI} backgroundColor={'#f5f5f5'} padding={'2.5'} rounded='8' w="100%" >
+          <Badge key={itemI} variant="subtle" colorScheme="info" alignSelf={'flex-start'} py='0'>{item.activity}</Badge>
+          <HStack  justifyContent="space-between" alignItems="center" key={item.name + itemI.toString()}>
+                <Heading size='sm'>{itemI+1}.</Heading>
+                <Heading size='sm'>
                   {item.name}
-                </Text>
-                <IconButton accessibilityLabel='Delete' size="sm" colorScheme="trueGray" icon={<Icon as={Entypo} name="minus" size="xs" color="trueGray.400" />} onPress={() => handleDelete(itemI)} />
-              </HStack>)}
+                </Heading>
+                <IconButton accessibilityLabel='Delete' size="sm" colorScheme="trueGray" icon={<CheckIcon size="md" color="green.400" />} onPress={() => handleDelete(itemI)} />
+              </HStack>
+              </VStack>
+              )}
           </VStack>
-        </VStack>
+          </VStack>
       </Box>
     </Center>;
 };
@@ -141,6 +149,18 @@ const Todo = (props) => {
     };
 
 
+  const styles = StyleSheet.create({
+      btn:{
+        marginTop:10,
+        width:300,
+        backgroundColor:'#f5f5f5',
+        borderColor:'#f5f5f5',
+        borderWidth:1,
+        borderRadius:10,
+        color:'#4C0033',
+        marginBottom:10
+      }
+    })
 
     
  export default TodoComponent;

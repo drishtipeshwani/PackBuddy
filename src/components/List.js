@@ -1,6 +1,6 @@
-import { View, Text } from 'react-native'
+import { View, Text,StyleSheet } from 'react-native'
 import React, { useEffect } from 'react'
-import { Flex, ScrollView, VStack,Heading,Box,HStack } from 'native-base'
+import { Flex, ScrollView, VStack,Heading,Box,HStack,FavouriteIcon } from 'native-base'
 import axios from 'axios'
 import { DataStore } from '@aws-amplify/datastore';
 import { Place} from '../models';
@@ -56,7 +56,11 @@ const List = ({navigation,route}) => {
 
 
   return (
-    <Flex justifyContent={'center'} padding='2.5' marginTop={'10'} backgroundColor={'#D2DAFF'} height='100%'>
+    <Flex justifyContent={'center'} padding='2.5' backgroundColor={'#D2DAFF'} height='100%'>
+        <Box style={styles.headingCtn} marginTop='10'>
+    <FavouriteIcon size='8' m='2' color='#E94560'/>
+    <Heading color={'#0F3460'}>PackBuddy</Heading>
+    </Box>
     <Box alignItem = 'center' margin = '2.5' p='5' rounded="8" shadow={3} borderWidth="1" borderColor="coolGray.300" bgColor={'coolGray.100'} >
               <VStack space={2} justifyContent='space-between'>
               <Heading color="coolGray.800" size='md'>
@@ -75,5 +79,13 @@ const List = ({navigation,route}) => {
     </Flex>
   )
 }
+
+const styles = StyleSheet.create({
+  headingCtn:{
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center',
+  }
+})
 
 export default List

@@ -36,7 +36,7 @@ const Dashboard = ({navigation}) => {
     <VStack space={8} backgroundColor='#f5f5f5' padding='5'>
       <Box>
       <Heading size="sm">Where are you going ?</Heading>
-        <Box marginBottom={'5'} mx='-2.5'>
+        <Box marginBottom={'5'}>
         <PlacesInput
         googleApiKey=''
         onSelect={place => {
@@ -52,28 +52,32 @@ const Dashboard = ({navigation}) => {
      <Heading size="sm">From</Heading>
       <Flex flexDirection={'row'}>
       <Input type = 'number' value = {startdate} onChangeText = {(e)=>{setStartDate(e)}} width='22.5%' marginRight={'2.5'} borderColor='black' borderWidth='1' borderRadius='5' />
+      <Box width={'75%'}>
       <DropDownPicker
       open = {firstopen}
       setOpen = {setfirstOpen}
       items = {dropdownMonths}
       value = {startMonth}
       setValue = {setStartMonth}
-      style = {{width:'75%'}}
+      dropDownDirection = 'TOP'
       />
+      </Box>
      </Flex>
      </Box>
      <Box>
       <Heading size="sm">To</Heading>
       <Flex flexDirection={'row'} >
       <Input type = 'number' value = {enddate} onChangeText = {(e)=>{setEndDate(e)}} width='22.5%' marginRight={'2.5'} borderColor='black' borderWidth='1' borderRadius='5' />
+      <Box width={'75%'}>
       <DropDownPicker
       open = {secondopen}
       setOpen = {setsecondOpen}
       items = {dropdownMonths}
       value = {endMonth}
       setValue = {setEndMonth}
-      style = {{width:'75%'}}
+      dropDownDirection = 'TOP'
       />
+      </Box>
      </Flex>
      </Box>
       <Box>
@@ -89,6 +93,7 @@ const Dashboard = ({navigation}) => {
       setValue = {settripMode}
       setOpen = {setthirdOpen}
       value = {tripmode}
+      dropDownDirection = 'TOP'
       />   
       </Box>
       <Box>
@@ -103,6 +108,7 @@ const Dashboard = ({navigation}) => {
       setValue = {setStayMode}
       setOpen = {setfourthOpen}
       value = {staymode}
+      dropDownDirection = 'TOP'
       />
       </Box>
       <Box>

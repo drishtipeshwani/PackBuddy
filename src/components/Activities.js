@@ -1,17 +1,22 @@
 import React,{useEffect, useState} from 'react'
-import { Pressable, Text, Box,Flex,Button, Center,HStack,CheckCircleIcon,Modal,Input,FormControl, ScrollView,ChevronRightIcon} from "native-base";
+import { Pressable, Text, Box,Flex,Button, Center,HStack,Heading,Modal,Input,FormControl, ScrollView,ChevronRightIcon,FavouriteIcon} from "native-base";
 import { StyleSheet } from 'react-native';
 
 
 const Activities = ({navigation,route}) => {
 
-  const [selectedActivities, setselectedActivities] = React.useState([])
+  const [selectedActivities, setselectedActivities] = React.useState(['Essentials'])
   const [customActivity, setcustomActivity] = React.useState('')
   const [showModal, setShowModal] = useState(false);
   
 
   const [activitiesList,setActivitiesList] = React.useState(['Swimming','Running','Hiking','Beach','Snow Sports','Gym','Business','Baby','Pets'])
 
+  useEffect(() => {
+    if(route.params.tripmode==='Flight' || route.params.tripmode==='Train'){
+      setselectedActivities([...selectedActivities,'Travel'])
+    }
+  },[])
 
   const addCustomActivity = () => {
      setShowModal(false)
@@ -32,6 +37,10 @@ const Activities = ({navigation,route}) => {
 
   return (
     <ScrollView backgroundColor={'#D2DAFF'} height='100%'>
+      <Box style={styles.headingCtn} marginTop='10'>
+    <FavouriteIcon size='8' m='2' color='#E94560'/>
+    <Heading color={'#0F3460'}>PackBuddy</Heading>
+    </Box>
     <Flex>
     {activitiesList.map((activity) => {
         return (
@@ -41,14 +50,14 @@ const Activities = ({navigation,route}) => {
               isHovered,
               isClicked,
             }) => {
-            return <Box alignItem = 'center' margin = '2.5' p='5' rounded="8" shadow={3} borderWidth="1" borderColor="coolGray.300"  backgroundColor={selectedActivities.includes(activity) ? "green.400":"coolGray.100"}  style={{
+            return <Box alignItem = 'center' margin = '2.5' p='5' rounded="8" shadow={3} borderWidth="1" borderColor="coolGray.300"  backgroundColor={selectedActivities.includes(activity) ? "#FF9494":"coolGray.100"}  style={{
               transform: [{
                 scale: isPressed ? 0.96 : 1
               }]
             }}>
               <HStack space={2} justifyContent='space-between'>
-               <ChevronRightIcon size="xl" color={"coolGray.400"} />
-              <Text color="coolGray.800" fontWeight="medium" fontSize="xl">
+               <ChevronRightIcon size="xl" color={selectedActivities.includes(activity) ? "white":"coolGray.800"} />
+              <Text color={selectedActivities.includes(activity) ? "white":"coolGray.800"}   fontWeight="medium" fontSize="xl">
                 {activity}
               </Text> 
               </HStack>
@@ -106,12 +115,18 @@ const Activities = ({navigation,route}) => {
 const styles = StyleSheet.create({
   btn:{
     marginTop:10,
-    width:200,
+    width:300,
     backgroundColor:'#f5f5f5',
     borderColor:'#f5f5f5',
     borderWidth:1,
     borderRadius:10,
     color:'#4C0033',
+    marginBottom:10
+  },
+  headingCtn:{
+    flexDirection:'row',
+    justifyContent:'center',
+    alignItems:'center',
   }
 })
 

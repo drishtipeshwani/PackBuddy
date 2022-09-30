@@ -308,5 +308,95 @@
         "name": "Torch",
         "isComplete": false,
         "activity": "Hiking"
+    },
+    {
+        "name": "Clothes",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Basic Wear",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Watch",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Wallet/Handbag",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Medicines and Pain killers",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "House Keys",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Reading Glasses",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Belt",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Eye Mask",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Books",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Camera",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Tampons",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Phone",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Phone Charger",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Tooth Kit",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Power Bank",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Other USB Cables",
+        "isComplete": false,
+        "activity": "Essentials"
+    },
+    {
+        "name": "Tickets and Boarding Pass",
+        "isComplete": false,
+        "activity": "Travel"
     }
 ]
