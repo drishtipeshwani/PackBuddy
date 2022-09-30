@@ -18,7 +18,7 @@ const Home = ({navigation}) => {
     <FavouriteIcon size='8' m='2' color='#E94560'/>
     <Heading color={'#0F3460'}>PackBuddy</Heading>
     </Box>
-      <Button style={styles.btn} variant="unstyled" onPress={()=>navigation.navigate('Dashboard')}>New Trips</Button>
+      <Button style={styles.btn} variant="unstyled" onPress={()=>navigation.navigate('Dashboard')}>New Trip</Button>
       <Button style={styles.btn} variant="unstyled" onPress={()=>navigation.navigate('PlacesList')}>Saved Trips</Button>
     </Center>
     </ImageBackground>

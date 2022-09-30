@@ -1,6 +1,6 @@
-import { View, Text,StyleSheet } from 'react-native'
+import { View, Text,StyleSheet,BackHandler } from 'react-native'
 import React, { useEffect } from 'react'
-import { Flex, ScrollView, VStack,Heading,Box,HStack,FavouriteIcon } from 'native-base'
+import { Flex, ScrollView, VStack,Heading,Box,HStack,FavouriteIcon,ArrowBackIcon } from 'native-base'
 import axios from 'axios'
 import { DataStore } from '@aws-amplify/datastore';
 import { Place} from '../models';
@@ -53,6 +53,19 @@ const List = ({navigation,route}) => {
     },[])
 
 
+    // Disbale the mobile phone back button and only allow the back button on the app
+    useEffect(() => {
+      const backAction = () => {
+        navigation.navigate('Home');
+        return true;
+      };
+      const backHandler = BackHandler.addEventListener(
+        "hardwareBackPress",
+        backAction
+      );
+      return () => backHandler.remove();
+    }, []);
+
 
 
   return (
@@ -72,7 +85,6 @@ const List = ({navigation,route}) => {
               <Heading color="coolGray.800" size='md'>
                 Temperature: {weather.main && weather.main.temp}
               </Heading>
-              <Heading color="coolGray.800" size='md'>{route.params.startdate}</Heading>
               </VStack>
             </Box>
         {placeId !== '' ? <TodoComponent placeId={placeId} navigation={navigation} route={route} isNew={true} activities={route.params.activities}/> : <Text>Loading</Text>}

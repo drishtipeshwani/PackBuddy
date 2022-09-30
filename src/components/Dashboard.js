@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import React ,{useState} from 'react'
-import {VStack,Box,Input,Icon,Center,Button, Flex,Heading, FavouriteIcon} from 'native-base';
+import {VStack,Box,Input,Icon,Center,Button, Flex,Heading, FavouriteIcon, ScrollView} from 'native-base';
 import DropDownPicker from 'react-native-dropdown-picker';
 import PlacesInput from 'react-native-places-input';
 
@@ -35,8 +35,8 @@ const Dashboard = ({navigation}) => {
     </Box>
     <VStack space={8} backgroundColor='#f5f5f5' padding='5'>
       <Box>
-      <Heading size="sm">Where are you going ?</Heading>
-        <Box marginBottom={'5'}>
+        <Heading color={'black'} size='sm'>Where are you going?</Heading>
+        <Box>
         <PlacesInput
         googleApiKey=''
         onSelect={place => {
@@ -45,6 +45,20 @@ const Dashboard = ({navigation}) => {
           setLongitude(place.result.geometry.location.lng)
         }}
         language={'en'}
+        stylesContainer={{
+          position: 'relative',
+          alignSelf: 'stretch',
+          margin: 0,
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+      }}
+      stylesList={{
+          top: 0,
+          left: -1,
+          right: -1
+      }}
        />
        </Box>
      </Box>

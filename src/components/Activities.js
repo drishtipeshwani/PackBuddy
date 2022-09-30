@@ -13,7 +13,7 @@ const Activities = ({navigation,route}) => {
   const [activitiesList,setActivitiesList] = React.useState(['Swimming','Running','Hiking','Beach','Snow Sports','Gym','Business','Baby','Pets'])
 
   useEffect(() => {
-    if(route.params.tripmode==='Flight' || route.params.tripmode==='Train'){
+    if(route.params.tripmode==='flight' || route.params.tripmode==='train'){
       setselectedActivities([...selectedActivities,'Travel'])
     }
   },[])
