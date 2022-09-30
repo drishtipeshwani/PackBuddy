@@ -1,0 +1,12 @@
+type DefaultTodo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  defaultTodo: AWSJSON!
+}
+
+type Place @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  Todos: [AWSJSON!]
+  activities: [String!]
+}
+ 

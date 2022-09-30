@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-packbuddy-dev-05419-authRole",
+      "UnauthRoleArn": "arn:aws:iam::763225616369:role/amplify-packbuddy-dev-05419-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::763225616369:role/amplify-packbuddy-dev-05419-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-packbuddy-dev-05419-deployment",
+      "UnauthRoleName": "amplify-packbuddy-dev-05419-unauthRole",
+      "StackName": "amplify-packbuddy-dev-05419",
+      "StackId": "arn:aws:cloudformation:ap-south-1:763225616369:stack/amplify-packbuddy-dev-05419/25490cd0-3f63-11ed-9fdc-06936d13add0",
+      "AmplifyAppId": "d6cmuczfknp6i"
+    }
+  }
+}

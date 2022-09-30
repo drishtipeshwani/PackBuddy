@@ -1,0 +1,312 @@
+[
+    {
+        "name": "Food packets",
+        "isComplete": false,
+        "activity": "Pets"
+    },
+    {
+        "name": "Snow pants",
+        "isComplete": false,
+        "activity": "Snow Sports"
+    },
+    {
+        "name": "Toys",
+        "isComplete": false,
+        "activity": "Baby"
+    },
+    {
+        "name": "Swimming Cap",
+        "isComplete": false,
+        "activity": "Swimming"
+    },
+    {
+        "name": "Food Bowls",
+        "isComplete": false,
+        "activity": "Pets"
+    },
+    {
+        "name": "Sunscreen",
+        "isComplete": false,
+        "activity": "Hiking"
+    },
+    {
+        "name": "Snow Hat/ Beanie and Gloves",
+        "isComplete": false,
+        "activity": "Snow Sports"
+    },
+    {
+        "name": "Baby Shoes",
+        "isComplete": false,
+        "activity": "Baby"
+    },
+    {
+        "name": "Toys and Play Sets",
+        "isComplete": false,
+        "activity": "Pets"
+    },
+    {
+        "name": "Water Bottle",
+        "isComplete": false,
+        "activity": "Hiking"
+    },
+    {
+        "name": "Hat",
+        "isComplete": false,
+        "activity": "Beach"
+    },
+    {
+        "name": "Sunglasses",
+        "isComplete": false,
+        "activity": "Snow Sports"
+    },
+    {
+        "name": "Gym Shoes",
+        "isComplete": false,
+        "activity": "Gym"
+    },
+    {
+        "name": "Seat Covers",
+        "isComplete": false,
+        "activity": "Pets"
+    },
+    {
+        "name": "Gym Clothes",
+        "isComplete": false,
+        "activity": "Gym"
+    },
+    {
+        "name": "Running Shoes",
+        "isComplete": false,
+        "activity": "Running"
+    },
+    {
+        "name": "Hat",
+        "isComplete": false,
+        "activity": "Hiking"
+    },
+    {
+        "name": "Sunglasses",
+        "isComplete": false,
+        "activity": "Hiking"
+    },
+    {
+        "name": "Running Socks",
+        "isComplete": false,
+        "activity": "Running"
+    },
+    {
+        "name": "Pet ID tags",
+        "isComplete": false,
+        "activity": "Pets"
+    },
+    {
+        "name": "Goggles",
+        "isComplete": false,
+        "activity": "Swimming"
+    },
+    {
+        "name": "Moisturiser, Powder and Sunscreen",
+        "isComplete": false,
+        "activity": "Baby"
+    },
+    {
+        "name": "Water Bottle",
+        "isComplete": false,
+        "activity": "Gym"
+    },
+    {
+        "name": "Swimsuit Coverup",
+        "isComplete": false,
+        "activity": "Beach"
+    },
+    {
+        "name": "Bug Spray",
+        "isComplete": false,
+        "activity": "Hiking"
+    },
+    {
+        "name": "Sunscreen",
+        "isComplete": false,
+        "activity": "Beach"
+    },
+    {
+        "name": "Gym Lightweight Equipment ",
+        "isComplete": false,
+        "activity": "Gym"
+    },
+    {
+        "name": "Running Shorts",
+        "isComplete": false,
+        "activity": "Running"
+    },
+    {
+        "name": "Headphones",
+        "isComplete": false,
+        "activity": "Gym"
+    },
+    {
+        "name": "Hiking Backpack",
+        "isComplete": false,
+        "activity": "Hiking"
+    },
+    {
+        "name": "Work Cell Phone",
+        "isComplete": false,
+        "activity": "Working"
+    },
+    {
+        "name": "Skin Moisturizer",
+        "isComplete": false,
+        "activity": "Snow Sports"
+    },
+    {
+        "name": "Sanitisers and Disinfectants",
+        "isComplete": false,
+        "activity": "Baby"
+    },
+    {
+        "name": "Laptop",
+        "isComplete": false,
+        "activity": "Working"
+    },
+    {
+        "name": "Swimsuit",
+        "isComplete": false,
+        "activity": "Beach"
+    },
+    {
+        "name": "Swimsuit",
+        "isComplete": false,
+        "activity": "Swimming"
+    },
+    {
+        "name": "Snow Jackets",
+        "isComplete": false,
+        "activity": "Snow Sports"
+    },
+    {
+        "name": "Hiking Clothes ( Non-Cotton)",
+        "isComplete": false,
+        "activity": "Hiking"
+    },
+    {
+        "name": "Swimming Coverup",
+        "isComplete": false,
+        "activity": "Swimming"
+    },
+    {
+        "name": "LAN Cable",
+        "isComplete": false,
+        "activity": "Working"
+    },
+    {
+        "name": "Pet passport",
+        "isComplete": false,
+        "activity": "Pets"
+    },
+    {
+        "name": "Headphones",
+        "isComplete": false,
+        "activity": "Running"
+    },
+    {
+        "name": "Compass/Map",
+        "isComplete": false,
+        "activity": "Hiking"
+    },
+    {
+        "name": "Hiking Shoes",
+        "isComplete": false,
+        "activity": "Hiking "
+    },
+    {
+        "name": "Running Shirt",
+        "isComplete": false,
+        "activity": "Running"
+    },
+    {
+        "name": "Suitable Shoes",
+        "isComplete": false,
+        "activity": "Snow Sports"
+    },
+    {
+        "name": "Work Cell Phone Charger",
+        "isComplete": false,
+        "activity": "Working"
+    },
+    {
+        "name": "Baby Food",
+        "isComplete": false,
+        "activity": "Baby"
+    },
+    {
+        "name": "First Aid Kits",
+        "isComplete": false,
+        "activity": "Pets"
+    },
+    {
+        "name": "Beach Sandals",
+        "isComplete": false,
+        "activity": "Beach"
+    },
+    {
+        "name": "Beach Sandals",
+        "isComplete": false,
+        "activity": "Beach"
+    },
+    {
+        "name": "Blankets",
+        "isComplete": false,
+        "activity": "Baby"
+    },
+    {
+        "name": "Work Badge",
+        "isComplete": false,
+        "activity": "Working"
+    },
+    {
+        "name": "Pet Carriers",
+        "isComplete": false,
+        "activity": "Pet"
+    },
+    {
+        "name": "Baby Clothes",
+        "isComplete": false,
+        "activity": "Baby"
+    },
+    {
+        "name": "Breast Pump, Bottles or Formula",
+        "isComplete": false,
+        "activity": "Baby"
+    },
+    {
+        "name": "First Aid Kit",
+        "isComplete": false,
+        "activity": "Hiking"
+    },
+    {
+        "name": "Laptop Charger",
+        "isComplete": false,
+        "activity": "Working"
+    },
+    {
+        "name": "Gym Clothes",
+        "isComplete": false,
+        "activity": "Gym"
+    },
+    {
+        "name": "Diapers and Wipes",
+        "isComplete": false,
+        "activity": "Baby"
+    },
+    {
+        "name": "Sunglasses",
+        "isComplete": false,
+        "activity": "Beach"
+    },
+    {
+        "name": "Torch",
+        "isComplete": false,
+        "activity": "Hiking"
+    }
+]
